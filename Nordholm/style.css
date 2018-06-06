@@ -1,0 +1,132 @@
+/*
+Theme Name: Nordholm
+Author: [Viktoria]
+Discription: A theme to present creative work
+*/
+body {
+	background-color: #eeeeee;
+}
+/* Header */
+header {
+	overflow: hidden;
+	
+}
+header a{
+	color: #808080;
+	text-decoration: none;
+}
+header a:hover {
+	color: #d4d4d4;
+}
+header p{
+	color: #808080;
+}
+ul#menu-meny.menu {
+	text-align: center;
+
+
+}
+header li{
+	list-style-type: none;
+	display: inline;
+	padding: 5px;
+	border: solid 1px;
+}
+
+
+/* Postgrid */
+div.filter a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+div.filter a:hover {
+	color: #d4d4d4;
+}
+div.filter span{
+	list-style-type: none;
+	display: inline;
+	padding: 5px;
+	margin: 5px;
+	border: solid 1px;
+	background-color: #4d4d4d;
+}
+
+div.posts, div.projekt{
+	overflow: hidden;
+}
+div.posts img, div.picture a {
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin: 10px;
+}
+
+/* Content */
+main {
+	overflow: hidden;
+}
+main div.picture{
+	width: 700px;
+	float:left;
+	padding-left: 20px;
+}
+main div.picture img {
+	height: 500px;
+	width: 700px;
+}
+main div.text{
+	text-align: center;
+	padding-left: 20px;
+}
+main div.skill a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+div.skill a:hover {
+	color: #d4d4d4;
+}
+div.skill {
+	list-style-type: none;
+	display: inline;
+	padding: 5px;
+	margin: 5px;
+	border: solid 1px;
+	background-color: #4d4d4d;
+}
+
+
+/* Footer */
+footer{
+	background-color: #808080;
+	height: 170px;
+}
+#footer-sidebar {
+display:block;
+margin: 0 auto;
+height: 170px;
+}
+#footer-sidebar-container {
+	padding: 0 10% 0 25%;
+}
+
+#footer-sidebar1 {
+float: left;
+width: 32%;
+margin-left:5px;
+margin-right:5px;
+}
+
+#footer-sidebar2 {
+float: left;
+width: 32%;
+margin-left:5px;
+margin-right:5px;
+
+}
+#footer-sidebar3 {
+float: left;
+width: 32%;
+margin-left:5px;
+margin-right:5px;
+
+}
