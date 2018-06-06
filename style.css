@@ -48,10 +48,22 @@ header div#menu li {
 	padding: 5px;
 	border: solid 1px;
 }
-
-.konsert h4{
-	background-color: red;
+.konsert {
+	overflow: hidden;
 }
+
+.konsert div.post-over{
+	float: left;
+	width: 80%;
+	height: 100px;
+}
+
+.konsert div.post-title{
+	
+	width: 20%;
+	height: 100px;
+}
+
 /* Postgrid */
 div.filter a{
 	text-decoration: none;
