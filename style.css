@@ -3,19 +3,27 @@ Theme Name: Nordholm med git
 Author: [Viktoria]
 Discription: A theme to present creative work
 */
-body {
-	background-color: #eeeeee;
+*{
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-
+body {
+	background-color: #eeeeee;
+	width: 80%;
+	margin: 0 auto;
+}
 
 /* Header */
 header {
 	overflow: hidden;
-	
+	position: relative;
+}
+header h1{
+	margin: 0;
 }
 header a{
 	color: #808080;
+	text-decoration: none;
 }
 header a:hover {
 	color: #d4d4d4;
@@ -23,20 +31,27 @@ header a:hover {
 header p{
 	color: #808080;
 }
-header .primary-menu {{
+header div#menu {
+	position: absolute;
+	top: 0px;
+	left: 50%;
+
+	transform: translate(-50%);
+}
+header div#menu ul{
 	text-align: center;
 	list-style: none;
-
-
 }
-header .primary-menu li {
-	list-style-type: none;
+header div#menu li {
+	list-style: none;
 	display: inline;
 	padding: 5px;
 	border: solid 1px;
 }
 
-
+.konsert h4{
+	background-color: red;
+}
 /* Postgrid */
 div.filter a{
 	text-decoration: none;
