@@ -3,6 +3,18 @@ add_theme_support( 'post-formats', array( 'image', 'gallery' ) );
 add_theme_support( 'post-thumbnails' ); 
 add_theme_support( 'title-tag' );
 
+$defaults = array(
+    'default-color'          => '',
+    'default-image'          => '',
+    'default-repeat'         => '',
+    'default-position-x'     => '',
+    'default-attachment'     => '',
+    'wp-head-callback'       => '_custom_background_cb',
+    'admin-head-callback'    => '',
+    'admin-preview-callback' => ''
+);
+add_theme_support( 'custom-background', $defaults );
+
 
 
 function register_my_menus() {
