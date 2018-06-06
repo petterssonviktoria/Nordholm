@@ -21,12 +21,13 @@ header a:hover {
 header p{
 	color: #808080;
 }
-ul#menu-meny.menu {
+header .primary-menu {{
 	text-align: center;
+	list-style: none;
 
 
 }
-header li{
+header .primary-menu li {
 	list-style-type: none;
 	display: inline;
 	padding: 5px;

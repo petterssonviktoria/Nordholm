@@ -4,7 +4,7 @@
 
 
 ?>
-<p>test</p>
+
 <?php
 
 $args = array(
@@ -22,6 +22,7 @@ if ( $the_query->have_posts() ) {
 		$the_query->the_post();
 		the_title();
 		the_content();
+		the_post_thumbnail();
 	}
 	echo '</ul>';
 	/* Restore original Post Data */

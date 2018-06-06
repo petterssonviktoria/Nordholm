@@ -8,8 +8,7 @@
 <?php
 
 $args = array(
-	'post_type' => 'press', 
-	'posts_per_page'=>-1,
+	'post_type' => 'press', 'posts_per_page'=>-1,
 	
 );
 
@@ -23,7 +22,7 @@ if ( $the_query->have_posts() ) {
 		$the_query->the_post();
 		the_title();
 		the_content();
-		the_post_thumbnail();
+		
 	}
 	echo '</ul>';
 	/* Restore original Post Data */

@@ -11,7 +11,8 @@
 	</head>
 	<body>
 		<header>
-			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 
+			'menu_class' => 'primary-menu', ) ); ?>
 		</header>
 		
 	</body>
