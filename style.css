@@ -16,7 +16,6 @@ header {
 }
 header a{
 	color: #808080;
-	text-decoration: none;
 }
 header a:hover {
 	color: #d4d4d4;
