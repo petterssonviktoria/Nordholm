@@ -55,13 +55,12 @@ header div#menu li {
 .konsert div.post-over{
 	float: left;
 	width: 80%;
-	height: 100px;
+	height: 300px;
 }
 
 .konsert div.post-title{
-	
 	width: 20%;
-	height: 100px;
+	height: 300px;
 }
 
 /* Postgrid */
