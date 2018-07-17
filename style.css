@@ -48,6 +48,13 @@ header div#menu li {
 	padding: 5px;
 	border: solid 1px;
 }
+
+/*Inlägg*/
+
+ul.fram {
+	padding: 0;
+}
+
 .konsert {
 	overflow: hidden;
 }
@@ -62,6 +69,25 @@ header div#menu li {
 	width: 20%;
 	height: 300px;
 }
+
+.musik {
+	overflow: hidden;
+	background-color: red;
+}
+
+.musik div.post-over{
+	float: left;
+	width: 80%;
+	height: 300px;
+}
+
+.musik div.post-over.post-title{
+	width: 20%;
+	height: 300px;
+	background-color: red;
+}
+
+
 
 /* Postgrid */
 div.filter a{

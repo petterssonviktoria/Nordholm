@@ -3,6 +3,8 @@ add_theme_support( 'post-formats', array( 'image', 'gallery' ) );
 add_theme_support( 'post-thumbnails' ); 
 add_theme_support( 'title-tag' );
 
+include ('inc/mediaSize.php');
+
 $defaults = array(
     'default-color'          => '',
     'default-image'          => '',
@@ -28,7 +30,43 @@ function register_my_menus() {
 add_action( 'init', 'register_my_menus' );
 
 
+function nordholm_fram() {
 
+	$labels = array(
+		'name'                  => _x( 'Framme', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Fram', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Fram', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
+	);
+	$rewrite = array(
+		'slug'                  => 'fram',
+		'with_front'            => true,
+		'pages'                 => true,
+		'feeds'                 => true,
+	);
+	$args = array(
+		'label'                 => __( 'Fram', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'fram', $args );
+
+}
+add_action( 'init', 'nordholm_fram', 0 );
 
 
 // Register Custom Post Type for Konsert-page
@@ -108,4 +146,43 @@ function nordholm_press() {
 
 }
 add_action( 'init', 'nordholm_press', 0 );
+
+
+function nordholm_musik() {
+
+	$labels = array(
+		'name'                  => _x( 'Musiker', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Musik', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Musik', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
+	);
+	$rewrite = array(
+		'slug'                  => 'musik',
+		'with_front'            => true,
+		'pages'                 => true,
+		'feeds'                 => true,
+	);
+	$args = array(
+		'label'                 => __( 'Musik', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'musik', $args );
+
+}
+add_action( 'init', 'nordholm_musik', 0 );
 ?>

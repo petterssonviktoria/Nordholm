@@ -1,21 +1,6 @@
 <?php
-/* Template name: fram*/
-
+	/* Template name: fram*/
 	get_header();
-
-
-// if ( have_posts() ) {
-// 	while ( have_posts() ) {
-// 		the_post(); 
-// 		//
-// 		the_title();
-// 		the_post_thumbnail();// Post Content here
-// 		//
-// 	} // end while
-// } // end if
-
-
-
 
 
 ?>
@@ -35,11 +20,11 @@ if ( $the_query->have_posts() ) {
 	echo '<ul class="fram">';
 	while ( $the_query->have_posts() ) {
 		$the_query->the_post();
-		// echo '<div class="post-over post-title">';
-		// 	echo '<h2>';
-		// 		the_title();
-		// 	echo '</h2>';
-		// echo '</div>';
+		echo '<div class="post-over post-title">';
+			echo '<h2>';
+				the_title();
+			echo '</h2>';
+		echo '</div>';
 		echo '<div class="post-over">';
 			the_content();
 		echo '</div>';
