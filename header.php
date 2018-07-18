@@ -13,12 +13,7 @@
 	</head>
 	<body>
 		<header>
-			
-			
-			
-		    <h1>
-		      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php bloginfo('name'); ?></a>
-		    </h1>
+		    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
 		    <p>
 		      <?php bloginfo( 'description' ); ?>
 		    </p>
