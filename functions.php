@@ -1,9 +1,16 @@
 <?php
+// wp_enqueue_style( 'style', get_stylesheet_uri() );
+// wp_enqueue_style('styleCSS', get_stylesheet_directory_uri(). 'style.css');
+
 add_theme_support( 'post-formats', array( 'image', 'gallery' ) );
 add_theme_support( 'post-thumbnails' ); 
 add_theme_support( 'title-tag' );
 
 include ('inc/mediaSize.php');
+
+
+
+
 
 $defaults = array(
     'default-color'          => '',
@@ -109,25 +116,25 @@ function nordholm_konsert() {
 add_action( 'init', 'nordholm_konsert', 0 );
 
 // Register Custom Post Type for Press-page
-function nordholm_press() {
+function nordholm_publicering() {
 
 	$labels = array(
-		'name'                  => _x( 'Press', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'Press', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'Press', 'text_domain' ),
+		'name'                  => _x( 'Publuceringar', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Publicering', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Publicering', 'text_domain' ),
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$rewrite = array(
-		'slug'                  => 'press',
+		'slug'                  => 'publicering',
 		'with_front'            => true,
 		'pages'                 => true,
 		'feeds'                 => true,
 	);
 	$args = array(
-		'label'                 => __( 'Press', 'text_domain' ),
+		'label'                 => __( 'Publicering', 'text_domain' ),
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail' ),
+		'supports'              => array( 'title', 'editor' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
@@ -142,10 +149,10 @@ function nordholm_press() {
 		'rewrite'               => $rewrite,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'press', $args );
+	register_post_type( 'publicering', $args );
 
 }
-add_action( 'init', 'nordholm_press', 0 );
+add_action( 'init', 'nordholm_publicering', 0 );
 
 
 function nordholm_musik() {
@@ -185,4 +192,42 @@ function nordholm_musik() {
 
 }
 add_action( 'init', 'nordholm_musik', 0 );
+
+function nordholm_galleri() {
+
+	$labels = array(
+		'name'                  => _x( 'Galleriet', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Galleri', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Galleri', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
+	);
+	$rewrite = array(
+		'slug'                  => 'galleri',
+		'with_front'            => true,
+		'pages'                 => true,
+		'feeds'                 => true,
+	);
+	$args = array(
+		'label'                 => __( 'Galleri', 'text_domain' ),
+		'description'           => __( 'Post Type Description', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor' ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'rewrite'               => $rewrite,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'galleri', $args );
+
+}
+add_action( 'init', 'nordholm_galleri', 0 );
 ?>

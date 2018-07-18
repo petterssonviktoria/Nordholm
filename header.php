@@ -3,7 +3,9 @@
 	<head>
 		<title>Nordholm</title>
 		<meta charset="utf-8" />
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
+		<!-- <link rel="stylesheet" href="<?php bloginfo() ?>"> -->
+		<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
+
 		
         <?php
         	wp_head();
