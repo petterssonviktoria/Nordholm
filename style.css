@@ -92,6 +92,21 @@ ul.fram {
 	height: 300px;
 }
 
+.publicering {
+	overflow: hidden;
+}
+
+.publicering div.post-over{
+	float: left;
+	width: 80%;
+	height: 500px;
+}
+
+.publicering div.post-over.post-title{
+	width: 20%;
+	height: 300px;
+}
+
 
 .galleri {
 	overflow: hidden;

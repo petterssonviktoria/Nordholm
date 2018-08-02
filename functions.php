@@ -10,7 +10,7 @@ include ('inc/mediaSize.php');
 
 
 
-
+//Custom background (funkar ej, men kanske i framtiden) 
 
 $defaults = array(
     'default-color'          => '',
@@ -25,7 +25,7 @@ $defaults = array(
 add_theme_support( 'custom-background', $defaults );
 
 
-
+//Menu 
 function register_my_menus() {
   register_nav_menus(
     array(
@@ -36,7 +36,7 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
-
+//Front Page
 function nordholm_fram() {
 
 	$labels = array(
@@ -154,7 +154,7 @@ function nordholm_publicering() {
 }
 add_action( 'init', 'nordholm_publicering', 0 );
 
-
+// Musik page
 function nordholm_musik() {
 
 	$labels = array(
@@ -193,6 +193,7 @@ function nordholm_musik() {
 }
 add_action( 'init', 'nordholm_musik', 0 );
 
+//Galleri page
 function nordholm_galleri() {
 
 	$labels = array(
@@ -232,6 +233,7 @@ function nordholm_galleri() {
 
 add_action( 'init', 'nordholm_galleri', 0 );
 
+//Footer widgets
 function nordholm_widgets_init() {
 	register_sidebar( array(
 	'name' => 'Footer Sidebar 1',
