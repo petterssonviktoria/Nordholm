@@ -127,6 +127,21 @@ ul.fram {
 	height: 300px;
 }
 
+.music {
+	overflow: hidden;
+}
+
+.music div.post-over{
+	float: left;
+	width: 80%;
+	height: 500px;
+}
+
+.music div.post-over.post-title{
+	width: 20%;
+	height: 300px;
+}
+
 .publicering {
 	overflow: hidden;
 }
