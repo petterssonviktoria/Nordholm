@@ -71,7 +71,7 @@ function nordholm_fram() {
 		'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
 	);
 	$rewrite = array(
-		'slug'                  => 'fram',
+		'slug'                  => 'fram', 
 		'with_front'            => true,
 		'pages'                 => true,
 		'feeds'                 => true,
