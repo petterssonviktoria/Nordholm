@@ -56,14 +56,7 @@ if ( $the_query->have_posts() ) {
 }
 
 
-
-
-	/* Template name: om*/
-	get_header();
-
-
-
-
+// Här 
 
 
 $args = array(

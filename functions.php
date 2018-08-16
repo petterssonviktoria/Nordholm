@@ -295,7 +295,7 @@ function nordholm_galleri() {
 
 add_action( 'init', 'nordholm_galleri', 0 );
 
-
+// Dett kopierade jag och döpte om alla namnen. På detta sätt kommer det fram en ny "postype" i dashboard
 function nordholm_om() {
 
 	$labels = array(
