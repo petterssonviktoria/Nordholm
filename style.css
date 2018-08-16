@@ -118,6 +118,7 @@ ul.fram {
 
 .konsert {
 	overflow: hidden;
+	padding-left: 30%;
 }
 
 .konsert div.post-over{
@@ -133,6 +134,7 @@ ul.fram {
 
 .musik {
 	overflow: hidden;
+	padding-left: 30%;
 }
 
 .musik div.post-over{
@@ -148,6 +150,7 @@ ul.fram {
 
 .music {
 	overflow: hidden;
+	padding-left: 30%;
 }
 
 .music div.post-over{
@@ -164,6 +167,7 @@ ul.fram {
 .publicering {
 	overflow: hidden;
 	margin-top: 50px;
+	padding-left: 30%;
 }
 
 .publicering div.post-over{
