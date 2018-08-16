@@ -37,14 +37,15 @@ if ( $the_query->have_posts() ) {
 		$the_query->the_post();
 		echo '<div class="fram-del">';
 			
-			echo '<div class="post-over">';
-				the_content();
-			echo '</div>';
 			echo '<div class="post-over post-title">';
 				echo '<h2>';
 					the_title();
 				echo '</h2>';
 			echo '</div>';
+			echo '<div class="post-over">';
+				the_content();
+			echo '</div>';
+
 		echo '</div>';
 	}
 	echo '</ul>';

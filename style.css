@@ -1,17 +1,19 @@
 /*
 Theme Name: Nordholm med git
-Author: [Viktoria]
+Author: [Viktoria ft. mirre]
 Discription: A theme to present creative work
 */
 *{
-	font-family: "PT Sans Narrow";
+	font-family: 'Montserrat', sans-serif;
+
 }
 h2 {
-	font-family: cursive;
+	font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
-	background-color: #eeeeee;
+	background-color: #E3D6D9;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -25,22 +27,24 @@ header {
 }
 header h1{
 	margin: 0;
+	font-weight: 400;
 }
 header a{
-	color: #808080;
+	color: #1a1a1a;
 	text-decoration: none;
 	font-size: 19px;
+	font-weight: 400;
 }
 header a:hover {
-	color: #d4d4d4;
+	color: #b17e95;
 }
 header p{
 	color: #808080;
 }
 header div#menu {
 	position: absolute;
-	top: 0px;
-	right: 0;
+	top: 11px;
+	right: 40px;
 
 	/*transform: translate(-50%);*/
 }
@@ -63,8 +67,8 @@ header div#menu li {
 }
 #title {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 11px;
+	left: 40px;
 }
 body:not(.home) .site-branding {
     display: none;
@@ -74,6 +78,8 @@ body:not(.home) .site-branding {
 
 ul.fram {
 	padding: 0;
+	margin-top: 40px;
+	margin-bottom: 80px;
 }
 
 
@@ -83,7 +89,7 @@ ul.fram {
 
 .fram div.fram-del{
 	float: left;
-	padding: 0 15px;
+	padding: 0 25px;
 	margin: 0 10%;
 	width: 60px;
 	/*height: 500px;*/
@@ -144,16 +150,18 @@ ul.fram {
 
 .publicering {
 	overflow: hidden;
+	margin-top: 50px;
 }
 
 .publicering div.post-over{
 	float: left;
-	width: 80%;
+	width: 70%;
 	height: 500px;
 }
 
 .publicering div.post-over.post-title{
 	width: 20%;
+	margin-right: 30px;
 	height: 300px;
 }
 
@@ -246,8 +254,12 @@ footer{
 #footer-sidebar {
 	display:block;
 	margin: 0 auto;
+	background-color: #E3D6D9;
 	height: 170px;
-	color: #fff;
+	color: #888082;
+	margin-top: 20px;
+    padding-left: 30px;
+	margin-bottom: 50px;
 
 }
 #footer-sidebar-container {
