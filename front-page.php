@@ -38,9 +38,9 @@ if ( $the_query->have_posts() ) {
 		echo '<div class="fram-del">';
 			
 			echo '<div class="post-over post-title">';
-				echo '<h2>';
-					the_title();
-				echo '</h2>';
+				// echo '<h2>';
+				// 	the_title();
+				// echo '</h2>';
 			echo '</div>';
 			echo '<div class="post-over">';
 				the_content();
