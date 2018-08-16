@@ -15,15 +15,15 @@
 		<header>
 		    <img class="header-image" src="<?php header_image(); ?>" 
 			    height="20% <?php echo get_custom_header()->height; ?>" 
-			    width="100% <?php echo get_custom_header()->width; ?>" alt="" />
+			    width="100% <?php echo get_custom_header()->width; ?>" alt="" /> <!-- För att få fram masthead-->
 			<div id="title">
-			    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><h1><?php bloginfo('name'); ?></h1></a>
+			    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><h1><?php bloginfo('name'); ?></h1></a> <!--För att få fram Namnet i vänstra hörnet-->
 			    <p>
 			      <?php bloginfo( 'description' ); ?>
 			    </p>
 		    </div>
     		<div id="menu">
-		      <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+		      <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?> <!--För att få fram menyn-->
 		    </div>
 
 			    
