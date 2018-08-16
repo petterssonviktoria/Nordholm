@@ -8,12 +8,12 @@
 <?php
 
 $args = array(
-	'post_type' => 'fram', 'posts_per_page'=>-1,
+	'post_type' => 'fram', 'posts_per_page'=>-1, 
 	
 );
 
 // The Query
-$the_query = new WP_Query( $args );
+$the_query = new WP_Query( $args ); //Defining the request
 
 // The Loop
 if ( $the_query->have_posts() ) {
@@ -26,7 +26,7 @@ if ( $the_query->have_posts() ) {
 			echo '</h2>';
 		echo '</div>';
 		echo '<div class="post-over">';
-			the_content();
+			the_content(); 
 		echo '</div>';
 	}
 	echo '</ul>';
