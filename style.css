@@ -103,6 +103,19 @@ ul.fram {
     text-align: center;
 }
 
+.om {
+	position: relative;
+	height: 400px;
+}
+
+.inner-om {
+	width: 80%;
+    transform: translate(-50%);
+    position: absolute;
+    left: 50%;
+    display: block;
+}
+
 .konsert {
 	overflow: hidden;
 }
